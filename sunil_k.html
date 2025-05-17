@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="mr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Biodata</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&display=swap" rel="stylesheet" />
+        <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        </style>
+    </head>
+    <body class="bg-gradient-to-br from-rose-50 via-indigo-50 to-purple-100 min-h-screen flex items-center justify-center p-6">
+        <div class="bg-white max-w-5xl w-full rounded-3xl shadow-2xl border border-indigo-300 overflow-hidden">
+            <!-- HEADER -->
+            <header   style="background-image: linear-gradient(#cc2b5e,#753a88);" class="text-white text-center p-8 mb-4">
+                <h2 class="text-3xl font-semibold tracking-wider">|| श्री गणेशाय नमः ||</h2>
+                <p class="text-lg mt-1 font-medium">|| श्री महालक्ष्मी प्रसन्न || &nbsp;&nbsp; || श्री जोतीबा प्रसन्न ||</p>
+                <!-- <h1 class="mt-4 text-5xl font-extrabold tracking-tight">विवाहासाठी माहिती (Biodata)</h1> -->
+            </header>
+        
+            <!-- PROFILE PHOTO CENTERED -->
+            <!-- <div class="flex justify-center -mt-20 mb-10">
+                <img src="IMG_1587-.jpg" alt="Sunil's Photo" class="rounded-3xl border-8 border-indigo-500 shadow-lg w-52 h-52 object-cover" loading="lazy" />
+            </div> -->
+        
+            <!-- Navigation Buttons -->
+            <nav class="flex justify-center space-x-6 mb-8">
+                <button id="btn1" class="px-6 py-2 rounded-full border border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-600 hover:text-white transition" onclick="showStep(1)">1. मूलभूत माहिती</button>
+                <button id="btn2" class="px-6 py-2 rounded-full border border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-600 hover:text-white transition" onclick="showStep(2)">2. कुटुंबाची माहिती</button>
+                <button id="btn3" class="px-6 py-2 rounded-full border border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-600 hover:text-white transition" onclick="showStep(3)">3. इतर माहिती</button>
+            </nav>
+        
+            <div class="px-10 pb-12 space-y-12">
+                    <!-- STEP 1: Basic Information -->
+                    <section id="step1" class="step-section">
+                    <div class="flex items-center mb-6">
+                        <div class="text-indigo-600 bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">1</div>
+                        <h2 class="text-3xl font-semibold text-indigo-900">मूलभूत माहिती (Basic Info)</h2>
+                    </div>
+                    <table class="w-full text-gray-800 text-lg border border-indigo-200 rounded-lg">
+                        <tbody>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>👤</span> मुलाचे नाव:</td>
+                            <td class="py-4 px-6">सुनिल बाळकृष्ण कुणकेकर</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🎂</span> जन्म दिनांक:</td>
+                            <td class="py-4 px-6">१०/०१/१९९७</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>⏰</span> जन्म वेळ:</td>
+                            <td class="py-4 px-6">सकाळी ७:२५ (शुक्रवार)</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>📏</span> उंची:</td>
+                            <td class="py-4 px-6">५ फूट ९ इंच</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🩸</span> रक्त गट:</td>
+                            <td class="py-4 px-6">A+ ve</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🌟</span> रंग:</td>
+                            <td class="py-4 px-6">गोरा</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>📛</span> धर्म:</td>
+                            <td class="py-4 px-6">हिंदू</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>📛</span> जात:</td>
+                            <td class="py-4 px-6">हिंदू – मराठा</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>♑</span> रास:</td>
+                            <td class="py-4 px-6">मकर</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>📛</span> नावारस नाव:</td>
+                            <td class="py-4 px-6">जीवन</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🛕</span> कुलदेवता:</td>
+                            <td class="py-4 px-6">जोतीबा</td>
+                        </tr>
+                        <tr class="border-b border-indigo-200 bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🕊</span> कुलदेवी:</td>
+                            <td class="py-4 px-6">महालक्ष्मी</td>
+                        </tr>
+                        <tr class="">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>🎓</span> शिक्षण:</td>
+                            <td class="py-4 px-6">बी.ई. (मेकॅनिकल अभियांत्रिकी)</td>
+                        </tr>
+                        <tr class="bg-indigo-50">
+                            <td class="py-4 font-semibold flex items-center gap-3 px-6"><span>💼</span> नोकरी:</td>
+                            <td class="py-4 px-6">सॉफ्टवेअर अभियंता, Introspective Market Research (IMR), पुणे</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-6 flex justify-end">
+                        <button onclick="showStep(2)" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">पुढील (Next)</button>
+                    </div>
+                </section>
+            
+                <!-- STEP 2: Family Information -->
+                <section id="step2" class="step-section hidden">
+                    <div class="flex items-center mb-6">
+                        <div class="text-indigo-600 bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">2</div>
+                        <h2 class="text-3xl font-semibold text-indigo-900">👪 कुटुंबाची माहिती (Family Info)</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 text-gray-800 text-lg leading-relaxed border border-indigo-200 rounded-lg p-6 bg-indigo-50">
+                        <div>👨‍👦 वडिलांचे नाव: श्री. बाळकृष्ण तुकाराम कुणकेकर (शेती)</div>
+                        <div>👩 आईचे नाव: सौ. संगीता बाळकृष्ण कुणकेकर (गृहिणी)</div>
+                        <div>👦 भाऊ (मोठा): श्री. सुशांत बाळकृष्ण कुणकेकर (सॉफ्टवेअर अभियंता)</div>
+                        <div>👰 वहिनी: सौ. प्रियांका सुशांत कुणकेकर (सॉफ्टवेअर अभियंती)</div>
+                        <div>👧 बहीण: नाही</div>
+                        <div>👵 आत्या: श्रीमती अंजना शिवाजी आरागडे (अर्जुनवाडा), सौ. लक्ष्मी लक्ष्मण येजरे (मुगळी)</div>
+                        <div class="md:col-span-2">👨‍👨‍👧 मामा: श्री. बळवंत बाबुराव पाटील, श्री. सोपान बाबुराव पाटील (चौंडाळ)</div>
+                    </div>
+                    <div class="mt-6 flex justify-between">
+                        <button onclick="showStep(1)" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">मागील (Previous)</button>
+                        <button onclick="showStep(3)" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">पुढील (Next)</button>
+                    </div>
+                </section>
+            
+                <!-- STEP 3: Other Information -->
+                <section id="step3" class="step-section hidden">
+                    <div class="flex items-center mb-6">
+                        <div class="text-indigo-600 bg-indigo-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl mr-4">3</div>
+                        <h2 class="text-3xl font-semibold text-indigo-900">🌾 इतर माहिती (Other Info)</h2>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 text-gray-800 text-lg leading-relaxed border border-indigo-200 rounded-lg p-6">
+                        <div>🚜 शेती: ६ एकर बागायत</div>
+                        <div>🏡 पत्ता: रा. नंद्याळ, ता. कागल, जि. कोल्हापूर</div>
+                        <div class="md:col-span-2">📞 संपर्क: ९४२१४२४४२१, ९९६०२७७१०५, ९६५७२७१९२५</div>
+                        <div class="md:col-span-2">👨‍👩‍👧 नातेवाईक: पाटील, बोडके, शिंदे, आरागडे, येजरे, सांगले, माने, चव्हाण, जाधव, कदम</div>
+                    </div>
+                    <div class="mt-6 flex justify-start">
+                        <button onclick="showStep(2)" class="px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition">मागील (Previous)</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <script>
+            function showStep(step) {
+                const sections = document.querySelectorAll('.step-section');
+                sections.forEach((sec, i) => {
+                if (i === step - 1) sec.classList.remove('hidden');
+                else sec.classList.add('hidden');
+                });
+            
+                // Highlight active button
+                for (let i = 1; i <= 3; i++) {
+                const btn = document.getElementById('btn' + i);
+                if (i === step) {
+                    btn.classList.add('bg-indigo-600', 'text-white');
+                    btn.classList.remove('hover:bg-indigo-600', 'hover:text-white');
+                } else {
+                    btn.classList.remove('bg-indigo-600', 'text-white');
+                    btn.classList.add('hover:bg-indigo-600', 'hover:text-white');
+                }
+                }
+            }
+            
+            // Initialize to step 1 on page load
+            showStep(1);
+        </script>
+    </body>
+</html>
+ 
